@@ -37,7 +37,7 @@
   <head>
     <meta charset="utf-8">
     <title>Orbita</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/letra-r.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Damion&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
