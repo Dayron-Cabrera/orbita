@@ -1,0 +1,580 @@
+
+body {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  letter-spacing: 0.1em;
+}
+
+body,
+html,
+article {
+  height: 100%;
+}
+
+header {
+  border-bottom: 2px solid #eee;
+  padding: 20px 0;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+header a {
+  text-decoration: none;
+  color: #333;
+}
+
+.logo {
+    
+  display: flex;
+  align-items: center;
+  padding-left: 1em;
+}
+
+.logo img {
+  object-fit: cover;
+  height: 5em;
+  width: 5em;
+}
+
+.logo h1{
+    font-size: 1.5em;
+}
+
+.user-log {
+  font-family: "roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url(../img/log.jpg) no-repeat center top;
+  background-color: rgba(83, 83, 83, 0.705);
+  background-size: cover;
+  height: 100%;
+  color: rgb(41, 41, 41);
+}
+.user-if {
+  font-family: "roboto", sans-serif;
+  color: #fff;
+}
+
+.article-header p {
+  font-size: 1.2em;
+}
+
+.article-header {
+  background-color: #333333;
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-position-y: -12em;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  line-height: 1.3;
+  min-height: 200px;
+  padding-top: -webkit-calc(2em + 40px);
+  padding-top: -moz-calc(2em + 40px);
+  padding-top: calc(2em + 40px);
+  object-fit: cover;
+}
+
+.article-header .reg {
+  padding: 0.5em 2em;
+}
+
+.article-header a:link,
+.article-header a:visited {
+  color: rgb(255, 255, 255);
+}
+
+.article-header a:hover {
+  color: #000000;
+}
+
+.article-header b {
+  font-size: 1.5em;
+}
+
+.down-arr {
+  font-family: "Courier New", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 5em;
+  padding-bottom: 1em;
+}
+
+.header-bar {
+  display: flex;
+  align-items: center;
+  padding: 0 8em 0 8em;
+  font-size: 12px;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.header-bar a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.header-bar figure {
+  color: rgb(255, 255, 255);
+}
+
+.header-nav {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  padding-right: 1.2em;
+  height: inherit;
+}
+
+[data-animate-header] {
+  box-shadow: 2px 11px 36px 0px rgba(0, 0, 0, 0.486);
+  background-color: #131314;
+  left: 0;
+  position: absolute;
+  height: inherit;
+  width: 100%;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+.header-past [data-animate-header] {
+  box-shadow: 0px 4px 23px -1px rgba(0, 0, 0, 0.75);
+  background-color: #131313;
+  position: fixed;
+  top: -71px;
+}
+.header-past.header-hide [data-animate-header] {
+  top: -71px;
+  transition: top 0.85s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.header-show [data-animate-header] {
+  top: 0;
+  transition: top 0.85s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.social-link {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: 0 10px;
+  background-size: 25px 25px;
+  color: white;
+  margin-top: -3px;
+}
+.social-link.logout {
+    background-image: url("../img/logout.svg");
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+  }
+  .social-link.login {
+    background-image: url("../img/ingresar.svg");
+    background-size: cover;
+  }
+  .social-link.category {
+    background-image: url("../img/contrato.svg");
+    background-size: cover;
+  }
+  .social-link.car {
+    background-image: url("../img/carro-de-la-compra.svg");
+    background-size: cover;
+  }
+
+.regresar-row a {
+  color: #fff;
+  filter: opacity(60%);
+  transform: rotate(-180deg);
+  text-decoration: none;
+  position: absolute;
+  font-size: 2.8em;
+  top: 0.4em;
+  left: 0.8em;
+}
+
+.regresar-row a:hover {
+  filter: opacity(100%);
+}
+
+.loginbox {
+  width: 320px;
+  height: 520px;
+  background: #1313138e;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 40px 30px 70px 30px;
+  border-radius: 1em;
+  box-shadow: 0px 20px 30px 10px rgba(0, 0, 0, 0.88);
+}
+
+.loginboxin{
+  width: 320px;
+  height: 520px;
+  background: #131313c9;
+  color: #fff;
+  top: 55%;
+  right: -4%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 40px 30px 70px 30px;
+  border-radius: 1em;
+  box-shadow: 0px 20px 30px 10px rgba(0, 0, 0, 0.88);
+  z-index: 1;
+}
+
+.loginbox h1 {
+  margin: 0;
+  padding: 0 0 30px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.loginbox label {
+  margin: 0;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-bottom: 0.4em;
+  font-weight: bold;
+  display: flex;
+}
+.loginbox input {
+  margin-top: 0;
+  background: transparent;
+  width: 100%;
+  padding: 0.2em;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: solid 1px #ffffff;
+  color: #fff;
+}
+.loginbox input[type="text"] .loginbox input[type="password"] {
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 35px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 2px;
+}
+.loginbox input[type="submit"] {
+  margin-top: 2em;
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #afafaf;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.loginbox input[type="submit"]:hover {
+  transition: 0.2s linear;
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #682749;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+span {
+  text-align: center;
+  position: absolute;
+  bottom: 1.5em;
+  right: 23%;
+  left: 23%;
+}
+
+.loginbox a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgray;
+}
+
+.loginbox a:hover {
+  color: #fff;
+}
+
+.loginboxin h1 {
+  margin: 0;
+  padding: 0 0 30px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.loginboxin label {
+  margin: 0;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-bottom: 0.4em;
+  font-weight: bold;
+  display: flex;
+}
+.loginboxin input {
+  margin-top: 0;
+  background: transparent;
+  width: 100%;
+  padding: 0.2em;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: solid 1px #ffffff;
+  color: #fff;
+}
+.loginboxin input[type="text"] .loginbox input[type="password"] {
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 35px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 2px;
+}
+.loginboxin input[type="submit"] {
+  margin-top: 2em;
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #afafaf;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.loginboxin input[type="submit"]:hover {
+  transition: 0.2s linear;
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #682749;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+span {
+  text-align: center;
+  position: absolute;
+  bottom: 1.5em;
+  right: 23%;
+  left: 23%;
+}
+
+.loginboxin a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgray;
+}
+
+.loginboxin a:hover {
+  color: #fff;
+}
+
+.button {
+  position: absolute;
+  bottom: 3em;
+  right: 23%;
+  left: 23%;
+}
+
+
+.button {
+  position: absolute;
+  bottom: 3em;
+  right: 23%;
+  left: 23%;
+}
+
+
+
+.about-description {
+  display: flex;
+  align-items: center;
+  padding: 5em;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  transform: skewY(-4deg);
+  margin-top: -10em; ;
+}
+
+.about-description-data {
+  font-size: 1em;
+  padding: 2em;
+  transform: skewY(4deg);
+}
+.about-description-data p {
+  font-size: .9em;
+}
+
+.about-description-image figure img{
+  transform: skewY(4deg);
+  padding-top: 2em;
+  height: 30em;
+}
+
+.container-category {
+  display: grid;
+  color: #fff;
+  grid-template-columns: repeat(7, 4fr);
+  grid-template-rows: repeat(2, 200px);
+  grid-gap: none;
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 200vh;
+  padding: 3em 2em 100vh;
+}
+.item {
+  display: flex;
+  /* border: 1px solid rgb(2, 2, 2); */
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  overflow: hidden;
+}
+
+.item:hover .info {
+  opacity: 1;
+}
+
+.info a {
+  color: rgb(192, 191, 191);
+  text-decoration: none;
+}
+
+.info a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.parpadea {
+  animation-name: parpadeo;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.login-product {
+  color: #333333;
+  text-decoration: none;
+}
+
+.login-product:hover {
+  color: #fc7964;
+  text-decoration: none;
+}
+
+.navegacion ul {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  list-style: none;
+}
+
+.menu > li {
+  position: relative;
+  display: inline-block;
+}
+
+.menu > li > a {
+  display: block;
+  color: #353535;
+  font-family: "Open sans";
+}
+
+.menu li a:hover {
+  color: #940d89;
+  transition: all 0.3s;
+}
+
+.submenu {
+  position: absolute;
+  right: -3.5em;
+  padding-top: 1.5em;
+  width: 10em;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+
+.submenu li a {
+  font-family: "Roboto", sans-serif;
+  background: #333333;
+  padding: 1em;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.menu li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.aliments {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5em 10em;
+}
+
+.producto {
+  border-radius: 10px;
+  border: 1px solid black;
+  overflow: hidden;
+  flex-shrink: 0;
+  padding: 1em;
+  margin: 1em;
+}
+
+.producto img {
+  border-radius: 10px;
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+}
