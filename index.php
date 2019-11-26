@@ -42,7 +42,7 @@
     <link href="https://fonts.googleapis.com/css?family=Damion&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
-  <body>
+  <body class="body">
   <header class="header" data-animate-header-container id="inicio"> 
     <!--Hemos utilizado la libreria de Jquery para identificar la posicion del document dentro del window para 
         y asi animar el header dentro de las diferentes secciones del proyecto -->
@@ -108,9 +108,9 @@
 
         <a href="#main" class="down-arr parpadea"> &#8595; </a>
       </header>
-    </article>
+    </article >
     
-    <section class="article-section" data-animate-header-target></section>
+    <section class="article-section" data-animate-header-target ></section>
       <br>
       <br>
       <br>
@@ -126,47 +126,57 @@
         <div class="about-description-data">
          <h3>SOBRE EL PROYECTO</h3>
 <br>
-        <p> Aqui va la descripción</p>
-         <br>
-        <p> Cabe destacar que la vision de este sitio hace referencia a la cracion de una pagina orientada al 
-        e-commerce, siendo esta una interfaz orientada al usuario y no un punto de venta para el vendedor.
-        </p>
+      <p>ORBITA es un proyecto desarrollado por los alumnos del CBTis #75 de la especialidad de programacion 
+         diseñado para la automatizacion de los prestamos escolares. Proponemos una alternativa practica con
+          el uso de tarjetas con Tecnología RFID que permitir la identificación de los alumnos dentro del 
+          plantel educativo.  
+      </p>
 
+      <br>
+      <p>Y que con su plataforma SPA poder controlar el proceso de control de tramites, como por ejemplo libros o 
+        material del area de soporte.  
+      </p>
+        <br>
         </div >
-      
-</div>
+        </div>
         
      </section>  
-    <br id="main">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+ <section class="cut-image">
 
+ </section>
+ <section class="team">
+
+ </section>
+ 
+
+ <section class="menu-unlog" >
+        <div class="about-description-image-page">
+        <figure>
+        <img src="assets/img/layerpage.png" alt="" id="main">
+        </figure id="main">
+        </div >
+
+        <div class="about-description-data">
+        <br>
+<br>
+
+<br>
+        <a href="assets/php/login.php"><span class="boton">Probar SPA</span></a>
+<p>
+  La plataforma que nos permitira conectarnos directo al dispositivo ORBITA y mediante sus herramientas
+  almacenar la informacion de los alumnos registrados.
+</p>
+ 
+        </div>
+
+   
+
+     </section>  
+ 
+ </section>
+      
+</section>
+  
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/waypoints.min.js"></script>
